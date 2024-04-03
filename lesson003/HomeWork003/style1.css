@@ -1,0 +1,19 @@
+.green {
+    border-radius: 5%;
+    background-color: #778D45;
+    border: none;
+}
+.light-green {
+    border-radius:5%;
+    background-color:#AEC09A ;
+}
+.button {
+    font-size: larger;
+    margin: 20px;
+    color: white;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.button:hover {
+    color: black;
+}

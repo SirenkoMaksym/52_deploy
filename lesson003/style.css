@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.red-box {
+    border: 2px dashed #666A86;
+    background-color: rgb(245, 255, 150);
+    /*margin-top: 30px;
+    margin: 30px;*/
+    margin: 10px 30px 70px;
+}
+
+.green-box {
+    margin: 15px 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+.yellow-box {
+    margin-left: 40px;
+    background-color: rgb(251, 251, 5);
+    border: 30px dashed cyan;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+.image-circle {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    
+    
+
+   
+    background-position: center;
+}
+
