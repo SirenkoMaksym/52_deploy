@@ -1,0 +1,72 @@
+.container {
+
+    /* включаем свойство flex */
+    display: flex;
+    border: 1px solid;
+    /* по умолчанию элементы распределяются по горизонтали */
+    flex-direction: row;
+    /* space-around распределяет свободное пространство вокруг элементов */
+    /* justify-content: space-around; */
+    /* space-evenly равномерно распределяет пространство между элементами */
+    /* justify-content: space-evenly; */
+    /* space-between - так же как evenly, но крайние элементы прижаты  */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8DDB5;
+    min-height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ 
+ .container>div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+    background-color: #666A86;
+ }
+ 
+ .container2 {
+    border: 1px solid;
+    flex-direction: row;
+    width: 100%;
+    min-height: 800px;
+    background-color: #E4D6A7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+ }
+ 
+ .container2_items {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #9B2915;
+ }
+ 
+ .item2 {
+    align-self: start;
+ }
+ 
+ .card {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+ }
+ 
+ .card>p {
+    width: 70%;
+ }
+ 
+ .card>img {
+    /* в значении width:100% мы растягиваем картинку под ширину контейнера */
+    width: 70%;
+ }

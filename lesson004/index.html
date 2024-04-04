@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <h1>Flexbox ⚡️</h1>
+    <h3>Гибкая технология позиционирования элементов в CSS</h3>
+    <ul>
+      <li>
+        Чтобы "включить" flex отображение в контейнере нужно задать свойство
+        display:flex; для родителя
+      </li>
+      <li>Justify-content задает правила на главной оси</li>
+      <li>Align-items на поперечной оси</li>
+      <li>Justify-content отвечает за положение элементов по оси заданной свойством flex-direction; а algn-items перпендикулярен ему</li>
+      <li>Align-self вы можете применить к элементу ребенку, чтобы изменить его положение по поперечной оси</li>
+    </ul>
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+
+    <ul>
+      <li>
+        Свойство flex-wrap: wrap; переносит элементы в контейнере на новую
+        строку, если они не помещаются
+      </li>
+      <li>
+         Если при переноси элементов через flex-wrap мы хотим изменить положение всех элементов вместе по поперечной оси мы используем align-content
+      </li>
+    </ul>
+
+    <div class="container2">
+      <div class="container2_items">1</div>
+      <div class="container2_items">2</div>
+      <div class="container2_items">3</div>
+      <div class="container2_items">4</div>
+      <div class="container2_items">5</div>
+      <div class="container2_items">6</div>
+      <div class="container2_items">7</div>
+      <div class="container2_items">8</div>
+      <div class="container2_items">9</div>
+      <div class="container2_items">10</div>
+    </div>
+    <ul>
+      <li>
+        Чтобы работать с flex по вертикали мы меняем оси местами с помощью
+        свойства flex-direction:column;
+      </li>
+      <li>По умолчанию flex-direction в положении row</li>
+    </ul>
+    <div class="card">
+      <h3>Dr. Oetker Ristorante Pizza Mozzarella</h3>
+      <p>
+        Pizza reich belegt mit Tomaten, Mozzarella und 5,4% Kräuter-Pestosauce
+        auf knusprig dünnem Boden, tiefgefroren. 2,5% Olivenöl nativ extra.
+      </p>
+
+      <img
+        src="https://img.rewe-static.de/7829381/34878406_digital-image.png?output-quality=60&fit=inside|840:840&output-format=image/webp&background-color=ffffff"
+        alt=""
+      />
+
+      <a target="_blank" href="https://shop.rewe.de/productList?brand=Dr.%20Oetker"
+        >More pizzas</a
+      >
+    </div>
+  </body>
+</html>
