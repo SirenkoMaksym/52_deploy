@@ -7,11 +7,11 @@ body {
 }
 
 main {
-    width: 400px;
+    width: 400vh;
 }
 header {
     margin-bottom: 0px;
-    background-image: url(lesson004/HomeWork/imagebanner.jpeg);
+    background-image: url(imagebanner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
