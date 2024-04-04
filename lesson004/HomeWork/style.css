@@ -3,9 +3,7 @@
 }
 body {
     margin: 0;
-    background-image: url(/lesson004/HomeWork/imagebanner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 main {
@@ -13,6 +11,9 @@ main {
 }
 header {
     margin-bottom: 0px;
+    background-image: url(/lesson004/HomeWork/imagebanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .cont {
     height: 120px;
