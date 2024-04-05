@@ -1,0 +1,84 @@
+* {
+    box-sizing:border-box;
+}
+.post1 {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.zahl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 15%;
+    height: 3%;
+    z-index: 1;
+    background-color: rgb(59,179,58);
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 5%;
+    
+}
+.zahl1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 25%;
+    height: 3%;
+    z-index: 1;
+    background-color: rgb(255,86,0);
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding: 5%;
+    
+}
+
+.post2 {
+    position: relative;
+    margin-top: 5%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.zahl2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 15%;
+    height: 3%;
+    z-index: 1;
+    background-color: rgb(255,0,0);
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 5%;
+    
+}
+.zahl3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 25%;
+    height: 3%;
+    z-index: 1;
+    background-color: rgb(255,86,0);
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding: 5%;
+    
+}

@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    margin: 0;
+ }
+ 
+ .header {
+    width: 100%;
+    min-height: 100px;
+    padding: 27px;
+    background-color: #ed6a5a;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+ }
+ 
+ /* .initial {
+    background-color: #E6EBE0;
+    min-height: 100px;
+ } */
+ 
+ .header>h1 {
+    color: rgb(238, 238, 238);
+    margin: 0;
+ }
+ 
+ .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ 
+ .square {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+ }
+ 
+ .bigRedSquare {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: #885053;
+    /* говорим relative чтобы спозиционировать родитель для absolute, но не повлиять на верстку */
+    position: relative;
+ }
+ 
+ .sand {
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    background-color: #F4F1BB;
+ }
+ 
+ .violet {
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    left: -5px;
+    background-color: #777DA7;
+ }
+ 
+ li {
+    margin-bottom: 5px;
+ }
+ 
+ li>span {
+    font-weight: bold;
+ }
