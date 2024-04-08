@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Grid layout</h1>
+    <ul>
+        <li>grid-template-columns - шаблон схема построение колонок в грид
+        </li>
+        <li>
+            свойстов гар отвечает за промежуток между элементами
+        </li>
+        <li>
+            если вы укажите все значения ширины колонки в фр то браузер сложит все значения всех колонок и будет
+            высчитывать колчичество пикселей относительно этой общей суммы
+        </li>
+        <li>можем указывать повсторяющиеся значения через фуенкцию репеат(кол-во повторений, размер ячейки)
+            grid-template-columns:repeat(4, 1fr);</li>
+
+    </ul>
+    <div class="containerdGrid">
+        <p>-1</p>
+        <span>0</span>
+
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+        <div class="gridItem">7</div>
+        <div class="gridItem">8</div>
+        <div class="gridItem">9</div>
+        <div class="gridItem">10</div>
+        <div class="gridItem">11</div>
+        <div class="gridItem">12</div>
+    </div>
+    <ul>
+        <li>/* grid-template-rows: 50px 100px; */ указать вручную</li>
+        <li>grid-auto-rows: 80px; для всех по высоте</li>
+
+    </ul>
+    <div class="containerMinMAx">
+        <div class="gridItemAdaptiv">1</div>
+        <div class="gridItemAdaptiv">2</div>
+        <div class="gridItemAdaptiv">3</div>
+        <div class="gridItemAdaptiv">4</div>
+        <div class="gridItemAdaptiv">5</div>
+        <div class="gridItemAdaptiv">6</div>
+        <div class="gridItemAdaptiv">7</div>
+        <div class="gridItemAdaptiv">8</div>
+    </div>
+<ul>
+    <li>
+        если хотим сделать слодную сетку
+    </li>
+</ul>
+<div class="containerGridAreas">
+    <div class="top">
+        <h3>Top</h3>
+       
+    </div>
+    <div class="bottom"><h3>Bottom</h3></div>
+    <div class="content"><h3>contetn</h3></div>
+    <span class="chicken">chicken</span>
+</div>
+</body>
+
+</html>

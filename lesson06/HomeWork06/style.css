@@ -1,0 +1,196 @@
+* {
+   /* padding не увеличивают контейнер */
+   box-sizing: border-box;
+}
+
+
+.containerArea {
+   display: grid;
+   grid-template-columns: repeat(auto-fill 100px);
+   grid-template-areas: 
+   'content1 content2 content3' 
+   'content1 content2 content3' 
+   'content4 content5 content6'
+   'content4 content5 content6'
+   ;
+}
+.post3 {
+   grid-area: content1;
+   z-index: 2;
+   background-color: aqua;
+}
+.post4 {
+   grid-area: content2;
+   z-index: 2;
+   background-color: rgb(27, 248, 60);
+   background-size: 
+   100%;
+}
+.post5 {
+   grid-area: content5;
+   z-index: 2;
+   background-color: rgb(249, 12, 163);
+}
+.post6 {
+   grid-area: content6;
+   z-index: 2;
+   background-color: rgb(218, 249, 14);
+}
+
+.header {
+  grid-area: header;
+   width: 100%;
+   height: 100%;
+    /* верх/ право + лево / низ */
+    /* мешает элементам в header приживаться к краю */
+    padding: 20px 0 15px;
+    background-image: url('imagebanner.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* сделали nav по центру header */
+    justify-content: center;
+ }
+ 
+ .logo {
+    /* сделали картинку меньше */
+    height: 30px;
+ }
+ 
+ /* внутренняя обертка в header */
+ .nav {
+    display: flex;
+    /* по поперечной оси сдвинули элементы вниз */
+    align-items: end;
+    /* ограничили контейнер по ширине */
+    width: 100vh;
+    /* по главной оси равномерно распределили пространство */
+    justify-content: space-between;
+ }
+ 
+ .navContainer {
+    /* для внутренних контейнеров с иконками и текстом задаем выравнивание по горизонтали и к низу */
+    display: flex;
+    align-items: end;
+ }
+ 
+ .navContainer>span {
+    cursor: pointer;
+    /* плавный переход для прозрачности */
+    transition: opacity 0.2s ease-in-out;
+    color: white;
+    opacity: 50%;
+ }
+ 
+ .icon {
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    margin-right: 5px;
+    opacity: 0.5;
+ }
+ 
+ 
+ .input {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+ }
+ 
+ .input:hover {
+    opacity: 1;
+ }
+ 
+ /* hover для нескольких элементов */
+ .navContainer:hover .playHeading,
+ .navContainer:hover .icon,
+ .navContainer:hover .oscarHeading {
+    opacity: 1;
+ }
+ .post1>img {
+   height: 100%;
+   width: 100%;
+ }
+ .post2>img {
+   height: 100%;
+   width: 100%;
+ }
+ .post1 {
+   height: 300px;
+   width: 180px;
+   grid-area: content4;
+   display: flex;
+   margin-top: 1%;
+   position: relative;
+}
+.zahl {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: fit-content;
+   height: fit-content;
+   z-index: 1;
+   background-color: rgb(59,179,58);
+   font-size: 20px;
+   font-weight: 800;
+   color: white;
+   padding-left: 2%;
+   padding-right: 2%;
+   
+}
+
+.ticket {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   width: fit-content;
+   height: fit-content;
+   z-index: 1;
+   background-color: rgb(255,86,0);
+   font-size: 20px;
+   font-weight: 700;
+   color: white;
+   padding-left: 1%;
+   padding-right: 1%;
+}
+
+.post2 {
+   grid-area: content3;
+   height: 300px;
+   width: 180px;
+   display: flex;
+   margin-top: 1%;
+   position: relative;
+}
+
+.zahl2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: fit-content;
+   height: fit-content;
+   z-index: 1;
+   background-color: rgb(255,0,0);
+   font-size: 20px;
+   font-weight: 800;
+   color: white;
+   padding-left: 2%;
+   padding-right: 2%;
+}
+footer {
+   background-size: 100%;
+   background-color: blueviolet;
+}
+@media (max-width: 415px) {
+   footer{
+      background-color: darkseagreen;
+   }
+ }
