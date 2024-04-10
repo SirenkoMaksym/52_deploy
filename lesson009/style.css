@@ -1,0 +1,23 @@
+.box {
+    margin-top: 15px;
+    height: 100px;
+    width: 100px;
+ }
+ 
+ .box--cyan {
+    border: 2px dashed;
+    background-color: rgb(132, 255, 255);
+ }
+ 
+ .new-paragraph {
+    color: red;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: underline;
+ }
+ 
+ .new-paragraph:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+ }
