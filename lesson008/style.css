@@ -352,7 +352,7 @@ main>cards {
 .orange {
     width: 25px;
     height: 20px;
-    background-image: url('/lesson008/media/svg/white-arrow-on-orange-minimalist-background_23-2148445339.avif');
+    background-image: url('media/svg/white-arrow-on-orange-minimalist-background_23-2148445339.avif');
     z-index: 2;
     background-size: cover;
     position: absolute;
