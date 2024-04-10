@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page {
+    width: 100%;
+    height: 2700px;
+}
+
+.navi {
+    min-height: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items {
+    width: 70%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.haupt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+    height: 54px;
+    font-weight: 700;
+}
+
+.icons {
+    width: 20%;
+    height: 70px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon__conteiner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon__conteiner>span {
+    font-size: 11px;
+    padding: 4px;
+}
+
+.icon__wrapper {
+    text-align: center;
+}
+
+.icon__wrapper1 {
+    text-align: center;
+}
+
+.icon__wrapper2 {
+    text-align: center;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 44px;
+}
+
+.pic {
+    display: flex;
+    align-items: end;
+    padding: 50px;
+    min-height: 400px;
+    width: 100%;
+    background-image: url(https://www.berlin.de/binaries/asset/image_assets/6340464/ratio_2_1/1685015071/1500x750/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; 
+    background-position: center;
+    color: rgb(238, 247, 255);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items: center;
+}
+
+.main__footer {
+    height: 450px;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.main__footer>h3 {
+    font-size: 11px;
+}
+.main__footer>p {
+    font-size: 6px;
+}
+.worte {
+    gap: 10px;
+    padding: 10px;
+}
+
+main>cards {
+    width: 60%;
+}
+
+
+.cards {
+    height: 1700px;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        'card16 item  item1'
+        'card1  card2  card3'
+        'card17 item2  item3'
+        'card4 card5 card6'
+        'card18 item4  item5'
+        'card7 card8 card9'
+        'card19 item6  item7'
+        'card10 card11 card12'
+        'card20 item8  item9'
+        'card13 card14 card15'
+    
+    ;
+    justify-content: center;
+    align-items: start;
+}
+
+.ab {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: xx-small;
+}
+
+.card15 {
+    grid-area: card15;
+
+}
+
+.card15a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/7926885/ratio_4_3/1677838096/800x600/');
+    background-size: cover;
+    min-height: 201px;
+    width: 100%;
+    position: relative;
+}
+
+.card14 {
+    grid-area: card14;
+
+}
+
+.card14a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/8740919/ratio_4_3/1709029484/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card13 {
+    grid-area: card13;
+
+}
+
+.card13a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/7926885/ratio_4_3/1677838096/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card12 {
+    grid-area: card12;
+
+}
+
+.card12a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/4471867/ratio_4_3/1702466828/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card11 {
+    grid-area: card11;
+
+}
+
+.card11a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/4416873/ratio_4_3/1685024767/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card10 {
+    grid-area: card10;
+
+}
+
+.card10a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/5983067/ratio_4_3/1685015076/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card9 {
+    grid-area: card9;
+}
+
+.card9a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/5657187/ratio_4_3/1635509105/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card8 {
+    grid-area: card8;
+}
+
+.card8a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/5451961/ratio_4_3/1686209648/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card7a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/5244280/ratio_4_3/1709542631/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card6a {
+    background-image: url(' https://www.berlin.de/binaries/asset/image_assets/8236415/ratio_4_3/1685514766/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card5a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/8236310/ratio_4_3/1685514768/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card4a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/1765751/ratio_4_3/1369837326/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card3 {
+    grid-area: card3;
+
+}
+
+.card3a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/6274092/ratio_4_3/1684826673/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card2a {
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/6232133/ratio_4_3/1709021309/800x600/');
+    background-size: cover;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+}
+
+
+
+.card1 {
+    grid-area: card1;
+
+}
+
+.card1a {
+    width: 100%;
+    min-height: 201px;
+    background-image: url('https://www.berlin.de/binaries/asset/image_assets/6243462/ratio_4_3/1685015072/800x600/');
+    background-size: cover;
+    position: relative;
+}
+.orange {
+    width: 25px;
+    height: 20px;
+    background-image: url('/lesson008/media/svg/white-arrow-on-orange-minimalist-background_23-2148445339.avif');
+    z-index: 2;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.card16 {
+    grid-area: card16;
+    width: 70%;
+    min-height: 25px;
+}
+
+.card17 {
+    grid-area: card17;
+    width: 70%;
+    min-height: 40px;
+}
+
+.card18 {
+    grid-area: card18;
+    width: 70%;
+    min-height: 40px;
+}
+
+.card19 {
+    grid-area: card19;
+    width: 70%;
+    min-height: 25px;
+}
+
+.card20 {
+    grid-area: card20;
+    width: 70%;
+    min-height: 25px;
+}
+footer {
+    font-size: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(183, 186, 186);
+}
+footer>h3 {
+    color: crimson;
+text-align: center;
+}
