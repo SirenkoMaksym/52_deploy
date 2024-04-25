@@ -4,10 +4,10 @@
 // Раскройте promise при помощи then, выведите имя студента.
 
 function getStudent() {
-return new Promise ((res)=> {
+return new Promise ((r)=> {
    setTimeout(()=>{
-    res({name: "Anri", age:32})
-   }, 0)
+    r({name: "Anri", age:32})
+   }, 4000)
 }
 )
 }
