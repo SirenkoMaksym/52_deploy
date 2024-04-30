@@ -1,0 +1,35 @@
+*{box-sizing: border-box;}
+
+h1{
+    min-width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+
+.ferrariCard {
+    text-shadow: 5px;
+    color: rgb(7, 226, 44);
+    width: 80%;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(208, 11, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgb(39, 109, 46);
+}
+
+.ferrariContainer {
+    display: flex;
+    gap: 10px;
+    flex-direction:column;
+    align-items: center; 
+    /* //justify-content: center; */
+}
+.ferrariCardHeading {
+    text-decoration: underline;
+    
+}
