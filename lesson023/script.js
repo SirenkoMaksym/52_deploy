@@ -105,7 +105,7 @@ async function loadWeather() {
 
 
             mainForm.append(header,formCity, formtemp, formSpeed, formCode)
-        }, 2000)
+        }, 1500)
     }
     uploadWeather()
 
