@@ -15,7 +15,7 @@ async function loadWeather() {
         setTimeout(() => {
             loader.style.display = 'none'
             const header = document.createElement('h1')
-            header.textContent= "ПОГОДА"
+            header.textContent = "ПОГОДА"
             const temp = dara.current_weather.temperature
             const speed = dara.current_weather.windspeed
             const code = dara.current_weather.weathercode
@@ -23,7 +23,7 @@ async function loadWeather() {
             const speedUnit = dara.current_weather_units.windspeed
             const codeUnit = dara.current_weather_units.weathercode
             const formCity = document.createElement('p')
-            formCity.textContent = "Регион: "+ region
+            formCity.textContent = "Регион: " + region
 
             const formtemp = document.createElement('p')
             formtemp.textContent = temp + tempUnit
@@ -99,13 +99,13 @@ async function loadWeather() {
             }
 
             formCode.textContent = weatherCode(code)
-            
 
 
 
-
-            mainForm.append(header,formCity, formtemp, formSpeed, formCode)
+            mainForm.append(header, formCity, formtemp, formSpeed, formCode)
         }, 1500)
+        mainForm.style.background = '#0de19e';
+       
     }
     uploadWeather()
 
