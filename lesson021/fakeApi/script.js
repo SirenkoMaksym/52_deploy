@@ -15,9 +15,11 @@ async function getFlowers() {
         const cardColor = document.createElement("p")
         cardColor.textContent = `Color: ${color}`
         cardColor.style = `color: ${color}`
+
         const cardImage = document.createElement("img")
         cardImage.src = image
         cardImage.classList.add('cardImg')
+        
         card.append(cardHeading, cardDesc, cardColor, cardImage)
         console.log(card)
         flowersContainer.append(card)
